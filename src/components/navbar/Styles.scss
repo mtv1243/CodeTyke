@@ -1,3 +1,5 @@
+@import '../../styles/utils/breakpoints';
+
 #navbarContainer{
   height: 50px;
   background: black;
@@ -6,6 +8,9 @@
 #navbarContent{
   max-width: 800px;
   margin: 0 auto;
+  @media only screen and (max-width: $mobile) {
+    text-align: center;
+  }
 }
 
 @media (max-width: 500px) {

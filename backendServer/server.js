@@ -111,7 +111,7 @@ let quizObj = {
     {
       id:3,
       title:"Again with strings!",
-      additionalInfo:'Remeber strings are letters and symbols surrounded by single or double quotations.',
+      additionalInfo:'Remember strings are letters and symbols surrounded by single or double quotations.',
       totalQuestions:4,
       nextQuestionId: 0,
       possibleAnswers: [

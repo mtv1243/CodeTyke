@@ -17,6 +17,9 @@
     &--subHeader{
         @include subheader;
         min-height: 42px;
+        @media only screen and (max-width: $mobile) {
+            display: none;
+        }
     }
   
     &--answerArea {
@@ -30,6 +33,10 @@
             border-radius: unset;
         }
 
+        @media only screen and (max-width: $mobile) {
+            background-color: unset;
+            box-shadow: unset;
+        }
     }
 
     &--selections{ 
@@ -37,12 +44,26 @@
         display: grid;
         grid-auto-flow: column;
         grid-gap: 10px;
+        @media only screen and (max-width: $tablet) {
+            grid-auto-flow: row;
+            width: 375px;
+            grid-template-columns: 50% 50%;
+            justify-items: center;
+            grid-gap: 17px 6px;
+        }
+        @media only screen and (max-width: $mobile) {
+            grid-gap: 10px 0px;
+        }
     }
 
     &--submitButtonContainer {
         height: 50px;
         .submitButton {
             float: right;
+            @media only screen and (max-width: $mobile) {
+                float: unset;
+                margin: 10px;
+            }
         }
     }
 }
