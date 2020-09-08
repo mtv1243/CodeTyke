@@ -26,7 +26,10 @@ const LearningModule = ({setGameStatus}) => {
 
   const handleSubmit=()=> {
     if(currentQuestionId < quizData.totalQuestions-1){
-      setCurrentQuestionId(currentQuestionId+1);
+      setTimeout(function(){
+        console.log("Checking answer...");
+        setCurrentQuestionId(currentQuestionId+1);
+      }, 500 );
     } else {
       setCurrentQuestionId(0);
       setGameStatus({message: "Great Job! Play again.", loadIntro: true});
