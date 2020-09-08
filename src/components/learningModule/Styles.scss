@@ -58,11 +58,16 @@
 
     &--submitButtonContainer {
         height: 50px;
+        position: relative;
         .submitButton {
             float: right;
-            @media only screen and (max-width: $mobile) {
+        }
+
+        @media only screen and (max-width: $mobile) {
+            padding: 0 10px;
+
+            .submitButton {
                 float: unset;
-                margin: 10px;
             }
         }
     }

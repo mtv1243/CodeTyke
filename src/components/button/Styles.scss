@@ -1,13 +1,42 @@
 @import '../../styles/utils/colors';
+@import '../../styles/utils/breakpoints';
+@import '../../styles/utils/mixins';
+
+$size: 50px;
 
 .submitButton{
-  text-align: center;
-  color: white;
-  line-height: 50px;
-  font-size: 20px;
-  border-radius: 25px;
-  font-weight: 600;
   background-color: $grass-blade;
-  padding: 0 2em;
+  border-radius: $size / 2;
+  color: white;
+  font-size: $size * .4;
+  font-weight: 600;
+  height: $size;
+  line-height: $size;
   cursor: pointer;
+  @include flex-spacing(space-between);
+
+  &--label {
+    padding: 0 20px;
+  }
+
+  &.hasIcons{
+    .icon, .placeholder {
+      width: 44px;
+      display: inline-block;
+    }
+  }
+
+  //animation for loader
+  .spinningLoader {
+    animation: rotate-s-loader 1.6s linear infinite;
+  }
+  
+  @keyframes rotate-s-loader {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }

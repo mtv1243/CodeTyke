@@ -13,7 +13,9 @@ const Intro = ({gameStatus, setGameStatus}) => {
                 <div className="introContainer--message">
                     {gameStatus.message}
                 </div>
-                <Button label="start" handleSubmit={()=> setGameStatus({loadIntro: false})} />
+                <div className="introContainer--submitButtonContainer">
+                    <Button label="start" handleSubmit={()=> setGameStatus({loadIntro: false})} />
+                </div>
         </div>
     )
 }

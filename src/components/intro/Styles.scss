@@ -19,11 +19,12 @@
     &--message {
         @include subheader;
     }
-
-    .submitButton { 
-        background-color: $barney;
-        margin-top: 40px;
-        display: inline-block;
+    &--submitButtonContainer{
+        display: block;
+        width: 50%;
+        margin: 40px auto 0;
+        .submitButton {
+            background-color: $barney;
+        }
     }
-   
 }

@@ -3,3 +3,9 @@
     text-align: center;
     margin: 25px 10px;
 }
+
+@mixin flex-spacing ($spacing){
+    display: flex; 
+    justify-content: $spacing;
+    align-items: center;
+}
