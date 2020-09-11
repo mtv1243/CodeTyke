@@ -1,0 +1,50 @@
+@import '../../styles/utils/colors';
+
+.modal {
+  padding: 20px 35px;
+  border-radius: 10px;
+  position: fixed;
+  background: white;
+  margin: 0px 2%;
+  top: 160px;
+  z-index: 100;
+
+  &::before{
+    bottom: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(113, 158, 206, 0);
+    border-bottom-color: white;
+    border-width: 6px;
+    right: 17px;
+    margin-left: -6px;
+  }
+
+    &--closeIcon{
+      color: $elephant-paw;
+      position: absolute;
+      right: 10px;
+      padding: 10px;
+      top: 10px;
+    }
+
+    &--title {
+      color: $barney;
+      width: 100%;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+
+    }
+
+    &--content {
+      line-height: 1.2em;
+      text-align: center;
+      font-size: 1.1em;
+    }
+}
