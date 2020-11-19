@@ -13,4 +13,13 @@
     &--image {display: block; width: inherit; padding-bottom: 8px;  }
     &--text {font-size: 1em; font-weight: 600;}
     input { position: absolute; left: 4px;}
+    &.active {
+      background-color: #00B3FF;
+    }
+    &.correct {
+      background-color: #2ACD72;
+    }
+    &.incorrect {
+      background-color: #FD8B96;
+    }
   }

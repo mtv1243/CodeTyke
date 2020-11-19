@@ -15,6 +15,12 @@ $size: 50px;
   cursor: pointer;
   @include flex-spacing(space-between);
 
+  &.inactive {
+    background-color: rgb(184, 184, 184);
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+
   &--label {
     padding: 0 20px;
   }
